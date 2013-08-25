@@ -12,14 +12,14 @@
     <!-- Render engine: makes IE (or the Chrome Frame) use the earliest versio): h5bp.com/i/378 -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <!-- DESCRIPTION -->
+    <!-- Description -->
     <meta name="description" content="Tennis Ranking">
-    <meta name="keywords" content="tennis, ranking, lima, perú, peru, tabla, tabla de resultados, ranking de tennis, ranking de tennis en lima, turno mañana, mañana, tennis turno mañana">
+    <meta name="keywords" content="tennis, ranking, lima, perú, peru, tenis, tabla de resultados, ranking de tennis, ranking de tennis en lima, turno mañana, mañana, tennis turno mañana">
     <!-- Mobile-device optimization: fixes site's scale -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
     <!-- Twitter's Bootstrap -->
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" media="screen" />
     <title>Ranking</title>
 </head>
 <body>
@@ -29,5 +29,9 @@
     <section>
         <h2>Ranking</h2>
     <section>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
 </body>
 </html>

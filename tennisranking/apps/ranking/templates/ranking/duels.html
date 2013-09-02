@@ -3,33 +3,301 @@
 {% block contenttitle %}Tabla de posiciones{% endblock %}
 {% block content %}
 <div class="row">
-    <div class="col-md-15">
+    <div class="col-md-18">
         <form class="form-inline" role="form">
             <div class="form-group">
                 <label class="sr-only" for="challenger_points">Puntos del retador</label>
-                <input type="text" class="form-control" id="challenger_points" placeholder="Puntos retador">
+                <input type="number" class="form-control" id="challenger_points" placeholder="Puntos" size="3">
             </div>
             <div class="form-group">
                 <label class="sr-only" for="challenger">Retador</label>
-                <input type="text" class="form-control" id="challenger" placeholder="Nombre del retador">
+                <input type="text" class="form-control" id="challenger" placeholder="Nombre del retador" size="30">
             </div>
             <div class="form-group">
                 <label class="sr-only" for="challenged_points">Puntos del retado</label>
-                <input type="text" class="form-control" id="challenged_points" placeholder="Puntos retado">
+                <input type="number" class="form-control" id="challenged_points" placeholder="Puntos" size="3">
             </div>
             <div class="form-group">
                 <label class="sr-only" for="challenged">Retado</label>
-                <input type="text" class="form-control" id="challenged" placeholder="Nombre del retado">
+                <input type="text" class="form-control" id="challenged" placeholder="Nombre del retado" size="30">
             </div>
             <div class="form-group">
                 <label class="sr-only" for="duel_date">Fecha del reto</label>
-                <div class="input-group col-md-2 datepicker " data-date-format="dd-mm-yyyy">
-                    <input class="form-control" size="16" type="text" value="12-02-2013" readonly="">
-                    <span class="input-group-addon glyphicon glyphicon-th"></span>
+                <input class="form-control datepicker" type="text" readonly="" placeholder="Fecha de reto" size="10">
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary">Guardar reto</button>
+            <button type="submit" class="btn btn-primary">Añadir reto</button>
         </form>
     </div>
+</div>
+<div class="row">
+    <h3>Retos pendientes</h3>
+    <table class="table table-striped table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Pto</th>
+            <th>Retador</th>
+            <th>Pto</th>
+            <th>Retado</th>
+            <th>Fecha reto</th>
+            <th>Aceptación</th>
+            <th>Partido</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>24</td>
+            <td>Enrique Saravia</td>
+            <td>21</td>
+            <td>Ricardo Elías</td>
+            <td>04/07/2013</td>
+            <td>07/07/2013</td>
+            <td>17/07/2013</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Enrique Saravia</td>
+            <td>21</td>
+            <td>Ricardo Elías</td>
+            <td>04/07/2013</td>
+            <td>07/07/2013</td>
+            <td>17/07/2013</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Enrique Saravia</td>
+            <td>21</td>
+            <td>Ricardo Elías</td>
+            <td>04/07/2013</td>
+            <td>07/07/2013</td>
+            <td>17/07/2013</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Enrique Saravia</td>
+            <td>21</td>
+            <td>Ricardo Elías</td>
+            <td>04/07/2013</td>
+            <td>07/07/2013</td>
+            <td>17/07/2013</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Enrique Saravia</td>
+            <td>21</td>
+            <td>Ricardo Elías</td>
+            <td>04/07/2013</td>
+            <td>07/07/2013</td>
+            <td>17/07/2013</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Enrique Saravia</td>
+            <td>21</td>
+            <td>Ricardo Elías</td>
+            <td>04/07/2013</td>
+            <td>07/07/2013</td>
+            <td>17/07/2013</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Enrique Saravia</td>
+            <td>21</td>
+            <td>Ricardo Elías</td>
+            <td>04/07/2013</td>
+            <td>07/07/2013</td>
+            <td>17/07/2013</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Enrique Saravia</td>
+            <td>21</td>
+            <td>Ricardo Elías</td>
+            <td>04/07/2013</td>
+            <td>07/07/2013</td>
+            <td>17/07/2013</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Enrique Saravia</td>
+            <td>21</td>
+            <td>Ricardo Elías</td>
+            <td>04/07/2013</td>
+            <td>07/07/2013</td>
+            <td>17/07/2013</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Enrique Saravia</td>
+            <td>21</td>
+            <td>Ricardo Elías</td>
+            <td>04/07/2013</td>
+            <td>07/07/2013</td>
+            <td>17/07/2013</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Enrique Saravia</td>
+            <td>21</td>
+            <td>Ricardo Elías</td>
+            <td>04/07/2013</td>
+            <td>07/07/2013</td>
+            <td>17/07/2013</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Enrique Saravia</td>
+            <td>21</td>
+            <td>Ricardo Elías</td>
+            <td>04/07/2013</td>
+            <td>07/07/2013</td>
+            <td>17/07/2013</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Enrique Saravia</td>
+            <td>21</td>
+            <td>Ricardo Elías</td>
+            <td>04/07/2013</td>
+            <td>07/07/2013</td>
+            <td>17/07/2013</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Enrique Saravia</td>
+            <td>21</td>
+            <td>Ricardo Elías</td>
+            <td>04/07/2013</td>
+            <td>07/07/2013</td>
+            <td>17/07/2013</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Enrique Saravia</td>
+            <td>21</td>
+            <td>Ricardo Elías</td>
+            <td>04/07/2013</td>
+            <td>07/07/2013</td>
+            <td>17/07/2013</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Enrique Saravia</td>
+            <td>21</td>
+            <td>Ricardo Elías</td>
+            <td>04/07/2013</td>
+            <td>07/07/2013</td>
+            <td>17/07/2013</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Enrique Saravia</td>
+            <td>21</td>
+            <td>Ricardo Elías</td>
+            <td>04/07/2013</td>
+            <td>07/07/2013</td>
+            <td>17/07/2013</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Enrique Saravia</td>
+            <td>21</td>
+            <td>Ricardo Elías</td>
+            <td>04/07/2013</td>
+            <td>07/07/2013</td>
+            <td>17/07/2013</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Enrique Saravia</td>
+            <td>21</td>
+            <td>Ricardo Elías</td>
+            <td>04/07/2013</td>
+            <td>07/07/2013</td>
+            <td>17/07/2013</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Enrique Saravia</td>
+            <td>21</td>
+            <td>Ricardo Elías</td>
+            <td>04/07/2013</td>
+            <td>07/07/2013</td>
+            <td>17/07/2013</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Enrique Saravia</td>
+            <td>21</td>
+            <td>Ricardo Elías</td>
+            <td>04/07/2013</td>
+            <td>07/07/2013</td>
+            <td>17/07/2013</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Enrique Saravia</td>
+            <td>21</td>
+            <td>Ricardo Elías</td>
+            <td>04/07/2013</td>
+            <td>07/07/2013</td>
+            <td>17/07/2013</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Enrique Saravia</td>
+            <td>21</td>
+            <td>Ricardo Elías</td>
+            <td>04/07/2013</td>
+            <td>07/07/2013</td>
+            <td>17/07/2013</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Enrique Saravia</td>
+            <td>21</td>
+            <td>Ricardo Elías</td>
+            <td>04/07/2013</td>
+            <td>07/07/2013</td>
+            <td>17/07/2013</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Enrique Saravia</td>
+            <td>21</td>
+            <td>Ricardo Elías</td>
+            <td>04/07/2013</td>
+            <td>07/07/2013</td>
+            <td>17/07/2013</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Enrique Saravia</td>
+            <td>21</td>
+            <td>Ricardo Elías</td>
+            <td>04/07/2013</td>
+            <td>07/07/2013</td>
+            <td>17/07/2013</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Enrique Saravia</td>
+            <td>21</td>
+            <td>Ricardo Elías</td>
+            <td>04/07/2013</td>
+            <td>07/07/2013</td>
+            <td>17/07/2013</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Enrique Saravia</td>
+            <td>21</td>
+            <td>Ricardo Elías</td>
+            <td>04/07/2013</td>
+            <td>07/07/2013</td>
+            <td>17/07/2013</td>
+        </tr>
+    </tbody>
+    </table>
 </div>
 {% endblock %}

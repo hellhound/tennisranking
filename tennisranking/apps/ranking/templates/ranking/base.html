@@ -29,14 +29,17 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Organization name</a>
+          <a class="navbar-brand">{% block contenttitle %}{% endblock %}</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#">Link 1 </a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
+            <li id="menu-item-ranking"><a href="{% url 'ranking' %}">Tabla</a></li>
+            <li id="menu-item-duels"><a href="{% url 'duels' %}">Retos</a></li>
+            <li id="menu-item-results"><a href="{% url 'home' %}">Resultados</a></li>
+            <li id="menu-item-contacts"><a href="{% url 'home' %}">Contactos</a></li>
+            <li id="menu-item-stats"><a href="{% url 'home' %}">Estadística</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -44,12 +47,19 @@
 
     <div class="container">
       <div class="starter-template">
-        <h1>{% block webtitle %} Web page title {% endblock %}</h1>
-        {% block webcontent %} Content {% endblock %}
+        {% block content %} Content {% endblock %}
       </div>
     </div><!-- /.container -->
 
-    <script src="{% static 'js/jquery.min.js' %}"></script>
-    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        var selected_menu_item = '{% block selectedmenuitem %}{% endblock %}';
+        $('#menu-item-' + selected_menu_item).addClass('active');
+    })
+    var selected_menu_item = 'ranking';
+    </script>
+    {% block scripts %}{% endblock %}
 </body>
 </html>
